@@ -13,13 +13,13 @@ const RegistrationScreen = ({ navigation }) => {
           onPress={() => navigation.navigate("Login")} // on button press we navigate to login screen
           style={styles.button}
         >
-          <Text style={styles.buttonText}>Login</Text>
+          <Text style={styles.buttonText}>To Login Screen</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate("Home")} // on button press we navigate to home screen
           style={[styles.button, styles.button2]}
         >
-          <Text style={styles.buttonText}>Home</Text>
+          <Text style={styles.buttonText}>To Home Screen</Text>
         </TouchableOpacity>
       </View>
     </View>
