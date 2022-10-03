@@ -1,27 +1,10 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
-/**
- * Here we pass the navigation prop as a function argument to use
- * for our onPress call back functions.
- */
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("Login")} // on button press we navigate to login screen
-          style={styles.button}
-        >
-          <Text style={styles.buttonText}>To Login Sreen</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("Register")} // on button press we navigate to register screen
-          style={[styles.button, styles.button2]}
-        >
-          <Text style={styles.buttonText}>To Register Screen</Text>
-        </TouchableOpacity>
-      </View>
+      <Text>Home Screen</Text>
     </View>
   );
 };
